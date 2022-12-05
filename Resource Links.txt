@@ -3,3 +3,4 @@ https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/
 https://450dsa.com/array
 https://15445.courses.cs.cmu.edu/fall2022/homework1/
 https://developer.mozilla.org/en-US/
+https://www.youtube.com/playlist?list=PLpPXw4zFa0uKKhaSz87IowJnOTzh9tiBk
