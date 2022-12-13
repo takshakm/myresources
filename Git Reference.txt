@@ -1,0 +1,36 @@
+1) Some Git Bash Commands
+git init 									-> initializes local git repo
+rm -rf .git 								-> removes the created repo
+touch .gitignore 								-> creates a .gitignore file manually
+ctrl + shift + p 								-> create a .gitignore file maually (select node for default ignores)
+git add . 									-> stages files for commits
+git reset --hard 								-> unstages and deletes files forever (due to --hard flag)
+pro tip 									-> make small commits every once in a while
+git commit -m "type your commit message here" 			-> commits the staged files
+git branch 									-> shows branches and current branch
+git checkout -b feature 						-> creates a new branch 'feature'
+git stash -u 								-> saves changes without commiting them
+git merge feature 							-> mearges branch to another
+git merge feature --squash 						-> keeps change history consize on the master branch but still present all the orignal commits on the feature branch
+git remote add origin "link" 						-> connect local code to the remote repo
+git push -u origin master						-> push the files to the remote repo
+
+2) Advanced Git Techniques and Flags
+git commit -am "type your commit message here"			-> automatically stages and commits the files
+git config --global alias.ac "commit -am"				-> created a custom gloable alias for staging and commiting files togather 
+git ac "your commit message here"					-> used the alias called ac for commiting changes
+git commit --amend -m "make changes to the msg"			-> changes the last commit message
+git commit --amend --no-edit						-> stage unstaged files to the previous commit and also commit them with the previous message only works if code isn't pushed to a remote repo
+git push origin master --force					-> push the remote commit with the state of the local code
+git revert									-> undo a commit with a new commit by going to the orignal state of that commit
+git stash pop								-> reshows the stashed changes 
+git stash save coolstuff						-> saves a stash to refrence it later
+git stash list								-> find the stash
+git stash apply 0								-> use the stash
+git branch -M muchho							-> changes the current branch name
+git log									-> view history of commits
+git log --graph --oneline --decorate				-> better looking log
+git bisect start								-> point bisect to the last working commit and it will perform binary search to check for the faulty commit
+git bisect bad								-> when you found the bad commit
+git bisect good 								-> pass on to the next commit
+git rebase master --interactive					-> rebases and squashes your commits by using the pick/squash command pict the commits or squash them into a single
